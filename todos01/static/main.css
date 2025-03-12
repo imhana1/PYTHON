@@ -1,0 +1,65 @@
+/* 전체 선택자 */
+* {
+  margin: 0;
+  padding: 9;
+  box-sizing: border-box;
+}
+
+#app {
+  width: 1200px;
+  /* 블록 요소 자체를 가운데로 */
+  margin: 0 auto;
+}
+
+header,
+nav,
+footer {
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+header {
+  border: 1px solid rgb(200, 200, 200);
+  font-size: 1.25em;
+  letter-spacing: 1em; /* 글자 사이 간격*/
+  font-weight: bold;
+}
+
+main {
+  overflow: hidden;
+}
+
+main > * {
+  float: left;
+}
+
+aside {
+  background-color: #b0e2ffab;
+  width: 100px;
+  height: 200px;
+  text-align: center;
+  /* line-height: 600px; */
+}
+
+section {
+  background-color: #ffffff;
+  width: 1000px;
+  min-height: 600px;
+  /* padding: 10px; */
+}
+
+nav,
+footer {
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.horizontal {
+  overflow: hidden;
+}
+
+/* horizontal 밑에 있는 form */
+.horizontal > form {
+  float: left;
+  margin-right: 10px;
+}
